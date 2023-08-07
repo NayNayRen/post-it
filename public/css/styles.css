@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: "Shantell Sans", cursive;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.button {
+    -webkit-transition: opacity 150ms ease;
+    background-color: aquamarine;
+    border-radius: 5px;
+    border: solid 1px #000;
+    color: #000;
+    font-size: 18px;
+    margin: 5px auto;
+    opacity: 1;
+    padding: 5px 15px;
+    text-decoration: none;
+    transition: opacity 150ms ease;
+}
+
+.button-link {
+    -webkit-transition: opacity 150ms ease;
+    color: #000;
+    font-size: 18px;
+    opacity: 1;
+    padding: 5px;
+    transition: opacity 150ms ease;
+}
+
+.button:hover,
+.button-link:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.delete-form,
+.edit-form,
+.login-form,
+.logout-form,
+.post-form,
+.register-form {
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    /* -webkit-box-shadow: 0 0 10px #808080; */
+    align-items: center;
+    /* border: solid 1px #000; */
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px #808080; */
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 25px 0;
+    width: 400px;
+    /* outline: solid 1px blue; */
+}
+
+.deletion-disclaimer {
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 400px;
+    /* outline: solid 1px blue; */
+}
+
+.flash-message {
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-shadow: 0 0 10px #808080;
+    -webkit-transform: translateX(-50%);
+    -webkit-transition: all 500ms ease;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #808080;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: -100%;
+    transform: translateX(-50%);
+    transition: all 500ms ease;
+    width: 300px;
+    z-index: 1;
+}
+
+.form-input {
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 25px;
+    padding: 8px 5px;
+    /* outline: solid 1px blue; */
+}
+
+.form-input:focus,
+textarea:focus {
+    outline: solid 1px aquamarine;
+}
+
+.form-input-error {
+    color: red;
+    font-size: 12px;
+    left: 0;
+    position: absolute;
+    bottom: 8px;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.logout-form {
+    margin-bottom: 30px;
+}
+
+.main {
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    align-items: center;
+    background-color: #fff;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    width: 80%;
+}
+
+.main h1 {
+    margin: 0;
+    text-align: center;
+}
+
+textarea {
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.user-container {
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: justify;
+    align-items: center;
+    color: #000;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0;
+    width: 100%;
+    /* outline: solid 1px red; */
+}
+
+.user-container div {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.user-container div label {
+    font-size: 14px;
+}
+
+.user-container h3 {
+    font-weight: normal;
+    margin-top: 0;
+    text-align: center;
+}
+
+.user-container p {
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    margin: 0 0 15px 0;
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+}
+
+@media (max-width: 700px) {
+    .main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .delete-form,
+    .edit-form,
+    .login-form,
+    .logout-form,
+    .post-form,
+    .register-form,
+    .user-container p {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .deletion-disclaimer {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .main {
+        width: 100%;
+    }
+}
