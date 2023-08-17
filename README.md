@@ -7,6 +7,19 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## About Post It
+
+This an app built to get some to play with Laravel and get a little more accustomed to building with it.
+You can:
+ - register yourself
+ - sign in
+ - create some posts or reminders or anything text based really
+ - update your creations
+ - delete your creations
+ - and delete yourself
+
+No data created or entered is used for anything outside of this application.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
